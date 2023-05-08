@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
-
     @Autowired
     private UserRepository userRepository;
+
 
     @Override
     public User createUser(User user) {
@@ -21,4 +21,5 @@ public class UserServiceImpl implements UserService {
         User newUser = userRepository.save(user);
         return newUser;
     }
+
 }

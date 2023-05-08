@@ -16,7 +16,6 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LoanRequest {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
